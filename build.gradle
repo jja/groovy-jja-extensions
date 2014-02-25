@@ -64,8 +64,30 @@ task generateModule << {
   }
 }
 
+groovydoc {
+  use = true
+  destinationDir = new File( "${project.buildDir.path}/groovydoc", project.version )
+  header = '<a href="https://github.com/jja/groovy-jja-extensions">groovy-jja-extensions</a>'
+  footer = null
+
+  link 'http://docs.oracle.com/javase/7/docs/api/', 'java.', 'javax.'
+  link 'http://groovy.codehaus.org/api/', 'groovy.', 'org.codehaus.groovy.'
+}
+
+task groovydocJar(type: Jar, dependsOn: groovydoc) {
+  classifier 'javadoc'
+  from groovydoc.destinationDir
+}
+
+task sourcesJar(type: Jar) {
+  from sourceSets.main.allSource
+  classifier = 'sources'
+}
+
 artifacts {
   archives jar
+  //archives sourcesJar
+  //archives groovydocJar
 }
 
 uploadArchives {
