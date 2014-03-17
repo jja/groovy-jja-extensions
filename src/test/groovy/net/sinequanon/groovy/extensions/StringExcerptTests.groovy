@@ -1,4 +1,7 @@
 /*
+ * Copyright 2014 jja@sinequanon.net
+ * see LICENSE.txt
+ *
  * jja@sinequanon.net in proxy for jja@ucar.edu
  * http://github.com/jja/groovy-jja-extensions
  */

@@ -1,4 +1,7 @@
 /*
+ * Copyright 2014 jja@sinequanon.net
+ * see LICENSE.txt
+ *
  * jja@sinequanon.net in proxy for jja@ucar.edu
  * http://github.com/jja/groovy-jja-extensions
  */
@@ -8,6 +11,8 @@ package net.sinequanon.groovy.extensions
 /**
  * Extensions to {@code String}
  *
+ * @author jja@sinequanon.net
+ * @see http://github.com/ncareol/groovy-jja-extensions
  * @see String
  */
 class StringExtensionMethods {

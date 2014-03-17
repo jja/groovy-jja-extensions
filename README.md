@@ -1,5 +1,7 @@
 # groovy-jja-extensions
 
-My Groovy extensions to standard classes.
+Some Groovy extensions to standard classes.
 
 * some String utilities
+
+See LICENSE.txt

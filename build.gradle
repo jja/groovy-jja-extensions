@@ -1,6 +1,6 @@
 apply plugin: 'groovy'
 
-version = '0.1.0'
+version = '1.0.0'
 
 repositories {
   if ( project.hasProperty('localJarDir') )
@@ -86,8 +86,8 @@ task sourcesJar(type: Jar) {
 
 artifacts {
   archives jar
-  //archives sourcesJar
-  //archives groovydocJar
+  archives sourcesJar
+  archives groovydocJar
 }
 
 uploadArchives {
